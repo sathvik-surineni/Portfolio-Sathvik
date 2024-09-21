@@ -1,0 +1,23 @@
+.timeline-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .timeline-table td {
+    padding: 0.5rem 1rem;
+    vertical-align: top;
+  }
+  
+  .timeline-icon {
+    width: 2rem;
+    text-align: center;
+  }
+  
+  .timeline-content {
+    text-align: left;
+  }
+  
+  .timeline-table tr:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Add a light border between rows */
+  }
+  

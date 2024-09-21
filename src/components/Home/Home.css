@@ -1,0 +1,53 @@
+.hero-container {
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-background {
+  position: absolute;
+  top: -20rem; /* Adjusted for mobile screens */
+  background: linear-gradient(to right, #6b46c1, #e53e3e, #c53030);
+  border-radius: 50%; 
+  width: 15rem;  /* Increased size for mobile */
+  height: 15rem; /* Increased size for mobile */
+}
+
+.hero-image {
+  position: relative;
+  top: -19.5rem; /* Adjusted for mobile screens */
+  z-index: 10; 
+  width:14rem;  /* Increased size for mobile */
+  height:14rem; /* Increased size for mobile */
+  border-radius: 50%; 
+}
+
+@media (min-width: 768px) {
+  .gradient-background {
+    top: -30rem;
+    width: 27rem;
+    height: 27rem;
+  }
+
+  .hero-image {
+    top: -29.5rem;
+    width: 20rem; /* Adjusted size for tablet screens */
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gradient-background {
+    top: -30rem;
+    width:24rem; /* Increased size for larger screens */
+    height:24rem;
+  }
+
+  .hero-image {
+    top: -29rem;
+    width: 22rem; /* Original size for large screens */
+    height: 22rem;
+  }
+}
